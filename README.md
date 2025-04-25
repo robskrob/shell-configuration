@@ -15,7 +15,7 @@ cd .vim/plugged/coc.nvim/
 yarn install
 
 # install ts/js coc server
-:CocInstall coc-json coc-tsserver
+:CocInstall coc-json coc-tsserver coc-css coc-prettier
 ```
 
 ## On first run

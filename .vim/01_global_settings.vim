@@ -18,6 +18,10 @@ set directory=/tmp/
 " Do not create backup files when saving over existing files
 set nobackup
 
+" May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
+" utf-8 byte sequence
+set encoding=utf-8
+
 " A little paranoid, but disable the writebackup function as well
 set nowritebackup
 
@@ -123,3 +127,7 @@ set statusline+=%F
 
 " scrollbar position update
 set updatetime=100
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved
+set signcolumn=yes
