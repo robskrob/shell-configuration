@@ -29,3 +29,20 @@ autocmd BufRead,BufNewFile {*.json,.babelrc}                                    
 autocmd BufNewFile,BufRead *.tsx 																																	set filetype=typescript
 " Resize splits when the window is resized
 autocmd VimResized         *                                                                      exe "normal! \<c-w>="
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)

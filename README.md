@@ -13,6 +13,9 @@ vim +PlugInstall +qall
 # set up coc for auto complete
 cd .vim/plugged/coc.nvim/
 yarn install
+
+# install ts/js coc server
+:CocInstall coc-json coc-tsserver
 ```
 
 ## On first run

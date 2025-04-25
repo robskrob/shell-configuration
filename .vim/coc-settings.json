@@ -1,8 +1,23 @@
 {
-  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-  "coc.preferences.formatOnSaveFiletypes": ["typescript", "typescriptreact", "rust", "elm", "c", "cpp", "html", "go", "haskell", "prisma"],
-  "javascript.referencesCodeLens.enable": false,
-  "suggest.enablePreselect": false,
-  "suggest.noselect": true,
-  "typescript.referencesCodeLens.enable": false
+  "coc.preferences.formatOnSaveFiletypes": [
+    "c",
+    "cpp",
+    "elm",
+    "go",
+    "haskell",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "prisma",
+    "rust",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact",
+  ],
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "tsserver.enable": true,
+  "tsserver.useLocalTsdk": true,
+  "tsserver.log": "normal"
 }
