@@ -13,11 +13,10 @@
     "rust",
     "typescript",
     "typescript.tsx",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "tsserver.enable": true,
-  "tsserver.useLocalTsdk": true,
   "tsserver.log": "normal"
 }
