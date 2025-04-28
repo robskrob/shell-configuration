@@ -26,7 +26,7 @@ autocmd BufRead,BufNewFile {*.ex}                                               
 autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown}                                                set filetype=markdown
 autocmd BufRead,BufNewFile {COMMIT_EDITMSG}                                                       set filetype=gitcommit
 autocmd BufRead,BufNewFile {*.json,.babelrc}                                                      set filetype=javascript
-autocmd BufNewFile,BufRead *.tsx 																																	set filetype=typescript
+autocmd BufRead,BufNewFile *.tsx                                                                  set filetype=typescriptreact
 " Resize splits when the window is resized
 autocmd VimResized         *                                                                      exe "normal! \<c-w>="
 
@@ -185,3 +185,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
