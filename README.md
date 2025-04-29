@@ -1,6 +1,14 @@
 # Dependencies
 
+**Requirements**
 This vim setup uses [vim-plug](https://github.com/junegunn/vim-plug)
+Git
+NVM
+Node
+Yarn
+
+**optional**
+ohmyzsh
 
 ## To install
 
