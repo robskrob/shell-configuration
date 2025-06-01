@@ -85,3 +85,7 @@ inoremap <silent><expr> <Tab>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
+
+
+let g:vim_ai_roles_config_file = '~/.vim/roles.ini'
+" let g:vim_ai_config_path = expand("~/.vim/roles.ini")
