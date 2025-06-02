@@ -2,10 +2,18 @@
 
 **Requirements**
 This vim setup uses [vim-plug](https://github.com/junegunn/vim-plug)
+
+brew install vim
 Git
+python3
 NVM
 Node
 Yarn
+
+in .zshrc:
+```
+alias vim="/opt/homebrew/bin/vim"
+```
 
 **optional**
 ohmyzsh

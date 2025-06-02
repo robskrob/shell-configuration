@@ -107,6 +107,8 @@ Plug 'hashivim/vim-terraform'
 " Sort:
 Plug 'inkarkat/vim-AdvancedSorters'
 
+" AI:
+Plug 'madox2/vim-ai'
 
 
 call plug#end()

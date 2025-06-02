@@ -18,5 +18,6 @@
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "tsserver.enable": true,
-  "tsserver.log": "normal"
+  "tsserver.log": "normal",
+  "typescript.autoClosingTags": true
 }
