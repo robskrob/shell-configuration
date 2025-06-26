@@ -64,5 +64,11 @@ function! ExecuteMacroOverVisualRange()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
 
+autocmd BufReadPost *.kt setlocal filetype=kotlin
+
+let g:LanguageClient_serverCommands = {
+    \ 'kotlin': ["kotlin-language-server"],
+    \ }
+
 " Vim Surround Extensions
 let g:surround_{char2nr('o')} = "**\r**"

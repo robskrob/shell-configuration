@@ -18,5 +18,12 @@
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "tsserver.enable": true,
-  "tsserver.log": "normal"
+  "tsserver.log": "normal",
+  "languageserver": {
+    "kotlin": {
+      "command": "/Users/robert.jewell/code/opensource/kotlin-language-server/server/build/install/server/bin/kotlin-language-server",
+      "filetypes": ["kotlin"],
+      "rootPatterns": ["settings.gradle.kts", "build.gradle.kts", ".git"]
+    }
+  }
 }
