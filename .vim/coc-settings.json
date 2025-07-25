@@ -25,5 +25,11 @@
       "filetypes": ["kotlin"],
       "rootPatterns": ["settings.gradle.kts", "build.gradle.kts", ".git"]
     }
+  },
+  "eslint.autoFixOnSave": true,
+  "typescript.format.enable": false,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
