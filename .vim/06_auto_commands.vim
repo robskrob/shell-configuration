@@ -117,6 +117,9 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction-cursor)
 " Remap keys for apply code actions affect whole buffer
 nmap <leader>as  <Plug>(coc-codeaction-source)
+" Show code actions (includes auto-import suggestions)
+" nmap <leader>ca <Plug>(coc-codeaction)
+nmap <leader>au <Plug>(coc-codeaction)
 " Apply the most preferred quickfix action to fix diagnostic on the current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
