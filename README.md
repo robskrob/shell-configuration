@@ -30,9 +30,9 @@ cd kotlin-language-server
 ./gradlew :server:installDist
 ```
 
-The CoC configuration in `.vim/coc-settings.json` already includes the Kotlin language server setup pointing to the built binary at:
+The CoC configuration in `.vim/coc-settings.json` includes the Kotlin language server setup. Point the languageserver to the built binary at:
 ```
-~/code/opensource/kotlin-language-server/server/build/install/server/bin/kotlin-language-server
+/Users/<username>/code/opensource/kotlin-language-server/server/build/install/server/bin/kotlin-language-server
 ```
 
 This provides Kotlin autocompletion, syntax highlighting, and error checking in vim.
