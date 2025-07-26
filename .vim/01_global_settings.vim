@@ -131,3 +131,6 @@ set updatetime=100
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved
 set signcolumn=yes
+
+" Let formatters handle end-of-line newlines instead of Vim automatically adding them
+set nofixeol
