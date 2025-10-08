@@ -27,7 +27,7 @@ map <leader>tdp :TSDefPreview<CR>
 nmap <leader>b :bd<CR>
 
 " Make Shift-K run RipGrep on the current word
-nnoremap K :Search <C-R><C-W><CR>
+nnoremap K :Rg <C-R><C-W><CR>
 
 " In command-line mode, C-a jumps to beginning (to match C-e)
 cnoremap <C-a> <Home>
@@ -42,12 +42,13 @@ nmap <leader>P PV`]=
 " Map CtrlP to FZF
 nnoremap <C-p> :FZF<CR>
 
-" Make jump to tag open up FZF
-nnoremap <c-]> :Tags <c-r><c-w><cr>
+" Use FZF for tag selection when multiple matches exist
+nnoremap <c-]> g<c-]>
 
 nnoremap <leader>lf :FZF<CR>
 nnoremap <leader>lb :Buffers<CR>
 nnoremap <leader>lt :Tags<CR>
+nnoremap <leader>ltw :Tags <c-r><c-w><CR>
 
 " Create a search command that uses Ripgrep and offers previews
 command! -bang -complete=file -nargs=* Search

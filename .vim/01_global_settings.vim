@@ -134,3 +134,4 @@ set signcolumn=yes
 
 " Let formatters handle end-of-line newlines instead of Vim automatically adding them
 set nofixeol
+set noeol
