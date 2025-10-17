@@ -26,24 +26,29 @@ yarn install
 :CocInstall coc-json coc-tsserver coc-css coc-prettier coc-eslint
 ```
 
-## Kotlin Language Server Setup
+## Kotlin Development with Ctags
 
-For Kotlin support, you'll need to set up the Kotlin Language Server manually:
+Kotlin support uses ctags instead of LSP (kotlin-lsp doesn't support go-to-definition for JAR
+dependencies).
 
+**Install dependencies:**
 ```sh
-# Clone and build the Kotlin Language Server
-cd ~/code/opensource/
-git clone https://github.com/fwcd/kotlin-language-server.git
-cd kotlin-language-server
-./gradlew :server:installDist
-```
+brew install universal-ctags ripgrep
 
-The CoC configuration in `.vim/coc-settings.json` includes the Kotlin language server setup. Point the languageserver to the built binary at:
-```
-/Users/<username>/code/opensource/kotlin-language-server/server/build/install/server/bin/kotlin-language-server
-```
+Generate tags file (run at project root):
+ctags -R --languages=kotlin,java --excmd=number \
+--exclude='build/*' --exclude='.gradle/*' \
+src/main
 
-This provides Kotlin autocompletion, syntax highlighting, and error checking in vim.
+Re-run when adding new Kotlin files.
+
+Keybindings:
+- Ctrl-] - Go to definition (ctags)
+- Ctrl-t - Jump back
+- K - Find all references (ripgrep)
+
+Note: CoC LSP features (gd, gr) still work for other languages (Go, TypeScript, etc.). For Kotlin,
+use the keybindings above.
 
 ## On first run
 
