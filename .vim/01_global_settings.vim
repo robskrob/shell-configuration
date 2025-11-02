@@ -4,7 +4,9 @@
 scriptencoding utf-8
 
 " Use the whole true color space
-set termguicolors
+" disable termguicolors to get classic
+" look for default vim colors
+" set termguicolors
 
 " Enable filetype-specific indenting and plugins
 filetype plugin indent on
@@ -135,3 +137,7 @@ set signcolumn=yes
 " Let formatters handle end-of-line newlines instead of Vim automatically adding them
 set nofixeol
 set noeol
+
+" tmux-specific escape sequences:
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"

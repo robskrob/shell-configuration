@@ -49,9 +49,10 @@ Plug 'jparise/vim-graphql'
 Plug 'tpope/vim-vinegar'
 
 " StatusBar:
-Plug 'itchyny/lightline.vim'
-Plug 'Shougo/echodoc.vim' " Echo method signatures in the status bar
-Plug 'maximbaz/lightline-ale' " Show ALE status in lightline
+" Switching to vim-airline - statusline conflict
+" Plug 'itchyny/lightline.vim'
+" Plug 'Shougo/echodoc.vim' " Echo method signatures in the status bar
+" Plug 'maximbaz/lightline-ale' " Show ALE status in lightline
 
 " Scrollbar:
 Plug 'obcat/vim-sclow'
@@ -60,6 +61,11 @@ Plug 'obcat/vim-sclow'
 Plug 'jacoborus/tender.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'lifepillar/vim-solarized8'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
 
 " Enable Fancy TMUX Navigation:
 Plug 'christoomey/vim-tmux-navigator' " Make Ctrl-jkl; navigate tmux panes as well
